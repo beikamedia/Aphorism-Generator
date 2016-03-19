@@ -1,0 +1,273 @@
+/*
+	Created by Bonecuss from the forums of Kazamatsuri, a home for Key fans.
+*/
+
+body {
+	background-color:black;
+}
+div#bg{
+	background-color:black;
+	background-image: url("../images/bg.png");
+	width:800px; 
+	height:320px; 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	animation: bganim 15s linear forwards;
+
+}
+div#fade{
+	background-color:black;
+	width:800px; 
+	height:320px; 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	opacity:0;
+	animation: fadeanim 15s linear forwards;
+}
+div#text{
+	text-shadow: 0px 0px 15px black;
+	font-size:35px;
+	font-family: "Monotype Corsiva";
+	text-align: center;
+	color:white;
+	vertical-align: middle;
+	width:520px; 
+	height:320px; 
+	position: absolute;
+	top: 50%;
+	left: 48%;
+	padding-right: 20px;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	animation: textfadeanim 2s linear 6.25s forwards;
+}
+div#text2{
+	text-shadow: 0px 0px 3px rgb(200,200,50);
+	font-size:35px;
+	font-family: "Monotype Corsiva";
+	text-align: center;
+	color:white;
+	vertical-align: middle;
+	width:520px; 
+	height:320px; 
+	position: absolute;
+	top: 50%;
+	left: 48%;
+	padding-right: 20px;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	animation: textfadeanim 2s linear 6.25s forwards;
+}
+div#person{
+	text-shadow: 0px 0px 15px black;
+	font-size:35px;
+	font-family: "Monotype Corsiva";
+	text-align: right;
+	color:white;
+	vertical-align: middle;
+	width:600px; 
+	height:320px; 
+	position: absolute;
+	top: 50%;
+	left: 55%;
+	padding-right: 400px;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	animation: textfadeanim 2s linear 6.25s forwards;
+}
+div#person2{
+	text-shadow: 0px 0px 3px rgb(200,200,50);
+	font-size:35px;
+	font-family: "Monotype Corsiva";
+	text-align: right;
+	color:white;
+	vertical-align: middle;
+	width:600px; 
+	height:320px; 
+	position: absolute;
+	top: 50%;
+	left: 55%;
+	padding-right: 400px;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	animation: textfadeanim 2s linear 6.25s forwards;
+}
+div#glow{
+	background-image: url("../images/glow.png");
+	background-position: -900px -225px;
+	background-repeat: no-repeat;
+	width:800px; 
+	height:320px; 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	animation: glowanim 5s linear 3.75s forwards;
+}
+div#form {
+	position: absolute;
+	left: 50%;
+	width:800px; 
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	vertical-align: middle;
+}
+div#reloadform {
+	position: absolute;
+	left: 50%;
+	width:800px; 
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	vertical-align: middle;
+	display: none;
+}
+input#tb {
+	background-color : #0A0A0A;
+	border: 1px solid double #707070;
+	text-shadow: 0px 0px 15px black;
+	font-size:35px;
+	font-family: "Monotype Corsiva";
+	text-align: center;
+	color:white;
+	vertical-align: middle;
+	width:400px; 
+	height:40px; 
+
+}
+input#tb2 {
+	background-color : #0A0A0A;
+	border: 1px solid double #707070;
+	text-shadow: 0px 0px 15px black;
+	font-size:35px;
+	font-family: "Monotype Corsiva";
+	text-align: center;
+	color:white;
+	vertical-align: middle;
+	width:220px; 
+	height:40px; 
+
+}
+input#submit {
+	background-color : #0A0A0A;
+	border: 1px solid double #707070;
+	text-shadow: 0px 0px 15px black;
+	font-size:35px;
+	font-family: "Monotype Corsiva";
+	text-align: center;
+	color:white;
+	vertical-align: middle;
+	width:150px; 
+	height:46px; 
+	cursor:pointer;
+}
+
+
+@keyframes bganim{
+	0% {background-position: 0px 0px;}
+	100% {background-position: -200px 0px}
+}
+@keyframes glowanim{
+	0% {background-position: -900px -225px}
+	100% {background-position: 900px -225px}
+}
+@keyframes fadeanim{
+	0% {opacity:1;}
+	10% {opacity:1;}
+	25% {opacity:0;}
+	85% {opacity:0;}
+	100% {opacity:1}
+}
+@keyframes textfadeanim{
+	0% {opacity:0}
+	100% {opacity:1}
+}
+
+  header{
+    background: #f5f5f5;
+    background: -moz-linear-gradient(top,#fafafa,#f5f5f5);
+    background: -webkit-linear-gradient(top,#fafafa,#f5f5f5);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fafafa),color-stop(1,#f5f5f5));
+    background: linear-gradient(top,#fafafa,#f5f5f5);
+    border-bottom: 1px solid #eee;
+    color: #444;
+    min-height: 44px;
+    padding: 7px 0px 0px;
+    position: fixed;
+    font-size: 13px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 200;
+}
+
+  footer{
+    background: #f5f5f5;
+    background: -moz-linear-gradient(top,#fafafa,#f5f5f5);
+    background: -webkit-linear-gradient(top,#fafafa,#f5f5f5);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fafafa),color-stop(1,#f5f5f5));
+    background: linear-gradient(top,#fafafa,#f5f5f5);
+    border-bottom: 1px solid #eee;
+    color: #444;
+    min-height: 34px;
+    padding: 7px 0px 0px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 200;
+}
+
+.bg_overlay_err{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 190;
+    background-color:rgba(255,0,0,0.3);
+}
+
+.bg_overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 190;
+    background-color:rgba(0,0,0,0.8);
+}
+
+.info{position: fixed;top: 0px;left: 0px;width: 200px;top: 50%;left: 50%;margin-top: -20px;margin-left: -100px;z-index: 195;text-align: center;font-weight: bold;background-color: white;}
+
+@media screen and (min-height:700px){
+	div#form {top: 77%;}
+	div#reloadform {top: 77%;}
+}
+
+@media screen and (max-height:700px){
+	div#form {bottom: 8%;}
+	div#reloadform {bottom: 8%;}
+}
+
+.submit {
+	background-color : #0A0A0A;
+	border: 1px solid double #707070;
+	text-shadow: 0px 0px 15px black;
+	font-size:35px;
+	font-family: "Monotype Corsiva";
+	text-align: center;
+	color:white;
+	vertical-align: middle;
+	width:150px; 
+	height:46px; 
+	cursor:pointer;
+}
